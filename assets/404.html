@@ -1,0 +1,12 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Redirecting…</title>
+<script>
+  (function () {
+    // 원래 요청 경로와 쿼리를 보존해서 루트로 넘김 (해시로 넘기면 더 안전)
+    var path = location.pathname + location.search + location.hash;
+    // 예: https://jkai.app/#/invite/ABC123 형태로 전달
+    var target = '/leokai002-web/' + '#' + path;
+    location.replace(target);
+  })();
+</script>
